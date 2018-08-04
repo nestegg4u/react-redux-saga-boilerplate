@@ -1,10 +1,14 @@
-# react-redux-saga-boilerplate
+# react-redux-saga-boilerplate [![Build Status](https://travis-ci.org/zanytycoon/react-redux-saga-boilerplate.svg?branch=master)](https://travis-ci.org/zanytycoon/react-redux-saga-boilerplate)
 This boilerplate was created by [create-react-app](https://github.com/facebook/create-react-app) and it has the basic configurations such as redux, redux-saga, react-router, styled-components, antdesign, etc.
 
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm build-css`
+
+Runs the chokidar to build css file for antd.
 
 ### `npm start`
 
@@ -35,3 +39,34 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## *Project structure*
+```
+my-app
+├── README.md
+├── node_modules
+├── package.json
+├── package-lock.json
+├── .env
+├── .gitignore
+├── .eslintrc
+├── .prettierrc
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── assets
+    ├── components
+    ├── containers
+    ├── redux
+    ├── setup
+        ├── AuthRoute.js
+        └── registerServiceWorker.js
+        └── router.js
+        └── theme.js
+    ├── index.js
+    ├── styles.css
+    ├── styles.css.map
+    └── styles.less
+```
